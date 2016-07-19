@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="來源: https://github.com/shiningjason1989/react-quick-tutorial">
+    <title>React.js 線上讀書會 > TodoAPP</title>
+</head>
+<body>
+<div id="app"></div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+<script type="text/javascript">window.App = {}</script>
+
+<script type="text/babel" src="InputField.js"></script>
+<script type="text/babel" src="TodoHeader.js"></script>
+<script type="text/babel" src="TodoItem.js"></script>
+<script type="text/babel" src="TodoList.js"></script>
+<script type="text/babel" src="TodoApp.js"></script>
+<script type="text/babel">
+    const {TodoApp} = window.App;
+
+    ReactDOM.render(
+            <TodoApp/>,
+            document.getElementById('app')
+    );
+</script>
+</body>
+</html>
