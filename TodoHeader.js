@@ -1,28 +1,27 @@
-/**
- * Created by mosluce on 2016/7/19.
- */
 class TodoHeader extends React.Component {
     render() {
-        let {appName, userName, todoCount} = this.props;
+        let {title, username, todoCount} = this.props;
 
         return (
             <div>
-                <h1>{appName}</h1>
-                <div>哈囉，{userName}：你有{todoCount + 1}項未完成代辦事項</div>
+                <h1>{title}</h1>
+                <div>哈囉，{username}：你有{todoCount + 1}項未完成代辦事項</div>
             </div>
         )
     }
 }
 
+// 1. 使用 propTypes 定義參數的型別
 TodoHeader.propTypes = {
-    appName: React.PropTypes.string,
-    userName: React.PropTypes.string,
+    title: React.PropTypes.string,
+    username: React.PropTypes.string,
     todoCount: React.PropTypes.number
 };
 
+// 2. 使用 defaultProps 定義參數的預設值
 TodoHeader.defaultProps = {
-    appName: '我的代辦清單',
-    userName: 'Guest',
+    title: '我的待辦清單',
+    username: 'Guest',
     todoCount: 0
 };
 

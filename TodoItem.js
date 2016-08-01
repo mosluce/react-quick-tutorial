@@ -8,7 +8,7 @@ class TodoItem extends React.Component {
 
         return (
             <li>
-                <input type="checkbox" checked={completed} />
+                <input type="checkbox" checked={completed} readOnly />
                 <span>{title}</span>
                 <button>x</button>
             </li>
@@ -18,7 +18,7 @@ class TodoItem extends React.Component {
 
 TodoItem.propTypes = {
     title: React.PropTypes.string,
-    completed: React.PropTypes.boolean
+    completed: React.PropTypes.bool
 };
 
 TodoItem.defaultProps = {
