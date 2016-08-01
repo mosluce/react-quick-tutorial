@@ -1,8 +1,11 @@
 class InputField extends React.Component {
     render() {
+
+        let {placeholder} = this.props;
+
         return (
             <div>
-                <input placeholder="新增代辦事項"/>
+                <input placeholder={placeholder} />
             </div>
         )
     }

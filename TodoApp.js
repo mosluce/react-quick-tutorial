@@ -11,9 +11,8 @@ class TodoApp extends  React.Component {
     render() {
         return (
             <div>
-                <TodoHeader/>
-                <div>哈囉，Jason：你有99項未完成代辦事項</div>
-                <InputField/>
+                <TodoHeader appName="我的代辦事項" userName="Jason" todoCount="99" />
+                <InputField placeholder={"輸入代辦事項"} />
                 <TodoList/>
             </div>
         )
