@@ -16,4 +16,14 @@ class TodoItem extends React.Component {
     }
 }
 
+TodoItem.propTypes = {
+    title: React.PropTypes.string,
+    completed: React.PropTypes.boolean
+};
+
+TodoItem.defaultProps = {
+    title: 'Item Label',
+    completed: false
+};
+
 window.App.TodoItem = TodoItem;
